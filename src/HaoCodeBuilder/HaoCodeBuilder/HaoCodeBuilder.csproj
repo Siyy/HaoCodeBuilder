@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9709B11-4606-4C92-AAD7-B8B50AB2E1B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HaoCodeBuilder</RootNamespace>
+    <AssemblyName>HaoCodeBuilder</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DatabaseProject.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.TextEditor">
+      <HintPath>F:\TDDOWNLOAD\Bingosoft.Workflow.XmlPad\XmlPad\bin\Debug\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>F:\360Downloads\MySQL Connector Net 6.4.4\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.76.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\360Downloads\sqlite-netFx40-binary-bundle-Win32-2010-1.0.79.0\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>F:\360Downloads\DockPanel_2.5_RC1_Bin\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_About.Designer.cs">
+      <DependentUpon>Form_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AddDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AddDatabase.Designer.cs">
+      <DependentUpon>Form_AddDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AddDatabase_MySql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AddDatabase_MySql.Designer.cs">
+      <DependentUpon>Form_AddDatabase_MySql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AddDatabase_Sqlite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AddDatabase_Sqlite.Designer.cs">
+      <DependentUpon>Form_AddDatabase_Sqlite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AddDatabase_SqlServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AddDatabase_SqlServer.Designer.cs">
+      <DependentUpon>Form_AddDatabase_SqlServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Base.Designer.cs">
+      <DependentUpon>Form_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Code_Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Code_Area.Designer.cs">
+      <DependentUpon>Form_Code_Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Code_SetDir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Code_SetDir.Designer.cs">
+      <DependentUpon>Form_Code_SetDir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Code_SetText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Code_SetText.Designer.cs">
+      <DependentUpon>Form_Code_SetText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Database.Designer.cs">
+      <DependentUpon>Form_Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Home.Designer.cs">
+      <DependentUpon>Form_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SetDbServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SetDbServer.Designer.cs">
+      <DependentUpon>Form_SetDbServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SetDirectory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SetDirectory.Designer.cs">
+      <DependentUpon>Form_SetDirectory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SetNameSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SetNameSpace.Designer.cs">
+      <DependentUpon>Form_SetNameSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SetNameSpaceClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SetNameSpaceClass.Designer.cs">
+      <DependentUpon>Form_SetNameSpaceClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SetServers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SetServers.Designer.cs">
+      <DependentUpon>Form_SetServers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_TemplateTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TemplateTree.Designer.cs">
+      <DependentUpon>Form_TemplateTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_About.resx">
+      <DependentUpon>Form_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AddDatabase.resx">
+      <DependentUpon>Form_AddDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AddDatabase_MySql.resx">
+      <DependentUpon>Form_AddDatabase_MySql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AddDatabase_Sqlite.resx">
+      <DependentUpon>Form_AddDatabase_Sqlite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AddDatabase_SqlServer.resx">
+      <DependentUpon>Form_AddDatabase_SqlServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Base.resx">
+      <DependentUpon>Form_Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Code_Area.resx">
+      <DependentUpon>Form_Code_Area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Code_SetDir.resx">
+      <DependentUpon>Form_Code_SetDir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Code_SetText.resx">
+      <DependentUpon>Form_Code_SetText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Database.resx">
+      <DependentUpon>Form_Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Home.resx">
+      <DependentUpon>Form_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SetDbServer.resx">
+      <DependentUpon>Form_SetDbServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SetDirectory.resx">
+      <DependentUpon>Form_SetDirectory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SetNameSpace.resx">
+      <DependentUpon>Form_SetNameSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SetNameSpaceClass.resx">
+      <DependentUpon>Form_SetNameSpaceClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SetServers.resx">
+      <DependentUpon>Form_SetServers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_TemplateTree.resx">
+      <DependentUpon>Form_TemplateTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HaoCodeBuilder.Business\HaoCodeBuilder.Business.csproj">
+      <Project>{AA7F2C2D-0689-4994-8ED0-A322DE928C07}</Project>
+      <Name>HaoCodeBuilder.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HaoCodeBuilder.Common\HaoCodeBuilder.Common.csproj">
+      <Project>{3DC5E18A-2AAF-4ED3-B783-CF9B42A47A44}</Project>
+      <Name>HaoCodeBuilder.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HaoCodeBuilder.Data.Access\HaoCodeBuilder.Data.Access.csproj">
+      <Project>{2B027833-88ED-4245-9BEE-4D8B3BC86F43}</Project>
+      <Name>HaoCodeBuilder.Data.Access</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HaoCodeBuilder.Data.MySql\HaoCodeBuilder.Data.MySql.csproj">
+      <Project>{6560CDB1-C655-4DE4-B059-07312816F2A2}</Project>
+      <Name>HaoCodeBuilder.Data.MySql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HaoCodeBuilder.Data.Oracle\HaoCodeBuilder.Data.Oracle.csproj">
+      <Project>{DE2E25F6-2A6F-4192-824B-446EB18B922C}</Project>
+      <Name>HaoCodeBuilder.Data.Oracle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HaoCodeBuilder.Data.Sqlite\HaoCodeBuilder.Data.Sqlite.csproj">
+      <Project>{97858E96-E14D-4FB8-B5A1-646B2F581206}</Project>
+      <Name>HaoCodeBuilder.Data.Sqlite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HaoCodeBuilder.Data.SqlServer\HaoCodeBuilder.Data.SqlServer.csproj">
+      <Project>{9F6A8754-7BA9-4D30-9EE7-DA2327730081}</Project>
+      <Name>HaoCodeBuilder.Data.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HaoCodeBuilder.Factory\HaoCodeBuilder.Factory.csproj">
+      <Project>{A61C28E7-C0B7-4F79-9F78-079494DD564D}</Project>
+      <Name>HaoCodeBuilder.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HaoCodeBuilder.IData\HaoCodeBuilder.IData.csproj">
+      <Project>{D58C0A56-71C6-495A-84B8-E18FD586D859}</Project>
+      <Name>HaoCodeBuilder.IData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HaoCodeBuilder.Model\HaoCodeBuilder.Model.csproj">
+      <Project>{12CC18E0-547B-4AF4-B965-9F9F95AAB5EC}</Project>
+      <Name>HaoCodeBuilder.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DatabaseProject.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
