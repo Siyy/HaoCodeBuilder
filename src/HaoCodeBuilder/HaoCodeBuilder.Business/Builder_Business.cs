@@ -45,7 +45,7 @@ namespace HaoCodeBuilder.Business
 
             business.Append("namespace " + param.NameSpace + (param.NameSpace.IsNullOrEmpty()?"": ".") + param.CNSC.Business + (param.NameSpace1.IsNullOrEmpty() ? "" : "." + param.NameSpace1) + "\r\n");
             business.Append("{\r\n");
-            business.Append("\tpublic class " + param.ClassName + "\r\n");
+			business.Append("\tpublic partial class " + param.ClassName + "\r\n");
             business.Append("\t{\r\n");
             business.Append("\t\tprivate " + (param.BuilderType == Model.BuilderType.Factory ? param.CNSC.Interface + ".I" : param.CNSC.Data + ".") + param.ClassName + " data" + param.ClassName + ";\r\n");
             business.Append("\t\tpublic " + param.ClassName + "()\r\n");

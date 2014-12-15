@@ -34,7 +34,7 @@ namespace HaoCodeBuilder.Business
             model.Append("namespace " + param.NameSpace + (param.NameSpace.IsNullOrEmpty()?"": ".") + param.CNSC.Model + (param.NameSpace1.IsNullOrEmpty() ? "" : "." + param.NameSpace1) + "\r\n");
             model.Append("{\r\n");
             model.Append("\t[Serializable]\r\n");
-            model.Append("\tpublic class " + param.ClassName + "\r\n");
+			model.Append("\tpublic partial class " + param.ClassName + "\r\n");
             model.Append("\t{\r\n");
             foreach (var field in fields)
             {

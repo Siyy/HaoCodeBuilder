@@ -33,7 +33,7 @@ namespace HaoCodeBuilder.Business
 
             data.Append("namespace " + param.NameSpace + (param.NameSpace.IsNullOrEmpty()?"": ".") + param.CNSC.Data + (param.NameSpace1.IsNullOrEmpty() ? "" : "." + param.NameSpace1) + "\r\n");
             data.Append("{\r\n");
-            data.Append("\tpublic class " + param.ClassName + (param.BuilderType == Model.BuilderType.Factory ? " : " + param.NameSpace + (param.NameSpace.IsNullOrEmpty()?"": ".") + param.CNSC.Interface + (param.NameSpace1.IsNullOrEmpty() ? "" : "." + param.NameSpace1) + ".I" + param.ClassName : "") + "\r\n");
+			data.Append("\tpublic partial class " + param.ClassName + (param.BuilderType == Model.BuilderType.Factory ? " : " + param.NameSpace + (param.NameSpace.IsNullOrEmpty() ? "" : ".") + param.CNSC.Interface + (param.NameSpace1.IsNullOrEmpty() ? "" : "." + param.NameSpace1) + ".I" + param.ClassName : "") + "\r\n");
             data.Append("\t{\r\n");
             data.Append("\t\tprivate DBHelper dbHelper = new DBHelper();\r\n");
             data.Append("\t\t/// <summary>\r\n");

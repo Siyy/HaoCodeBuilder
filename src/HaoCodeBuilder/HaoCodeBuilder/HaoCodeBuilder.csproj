@@ -64,15 +64,8 @@
     <Reference Include="ICSharpCode.TextEditor">
       <HintPath>F:\TDDOWNLOAD\Bingosoft.Workflow.XmlPad\XmlPad\bin\Debug\ICSharpCode.TextEditor.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data">
-      <HintPath>F:\360Downloads\MySQL Connector Net 6.4.4\Assemblies\v4.0\MySql.Data.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.SQLite, Version=1.0.76.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>F:\360Downloads\sqlite-netFx40-binary-bundle-Win32-2010-1.0.79.0\System.Data.SQLite.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -284,18 +277,6 @@
     <ProjectReference Include="..\HaoCodeBuilder.Data.Access\HaoCodeBuilder.Data.Access.csproj">
       <Project>{2B027833-88ED-4245-9BEE-4D8B3BC86F43}</Project>
       <Name>HaoCodeBuilder.Data.Access</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HaoCodeBuilder.Data.MySql\HaoCodeBuilder.Data.MySql.csproj">
-      <Project>{6560CDB1-C655-4DE4-B059-07312816F2A2}</Project>
-      <Name>HaoCodeBuilder.Data.MySql</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HaoCodeBuilder.Data.Oracle\HaoCodeBuilder.Data.Oracle.csproj">
-      <Project>{DE2E25F6-2A6F-4192-824B-446EB18B922C}</Project>
-      <Name>HaoCodeBuilder.Data.Oracle</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HaoCodeBuilder.Data.Sqlite\HaoCodeBuilder.Data.Sqlite.csproj">
-      <Project>{97858E96-E14D-4FB8-B5A1-646B2F581206}</Project>
-      <Name>HaoCodeBuilder.Data.Sqlite</Name>
     </ProjectReference>
     <ProjectReference Include="..\HaoCodeBuilder.Data.SqlServer\HaoCodeBuilder.Data.SqlServer.csproj">
       <Project>{9F6A8754-7BA9-4D30-9EE7-DA2327730081}</Project>

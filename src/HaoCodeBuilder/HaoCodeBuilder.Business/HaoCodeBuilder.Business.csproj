@@ -59,18 +59,6 @@
       <Project>{2B027833-88ED-4245-9BEE-4D8B3BC86F43}</Project>
       <Name>HaoCodeBuilder.Data.Access</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HaoCodeBuilder.Data.MySql\HaoCodeBuilder.Data.MySql.csproj">
-      <Project>{6560CDB1-C655-4DE4-B059-07312816F2A2}</Project>
-      <Name>HaoCodeBuilder.Data.MySql</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HaoCodeBuilder.Data.Oracle\HaoCodeBuilder.Data.Oracle.csproj">
-      <Project>{DE2E25F6-2A6F-4192-824B-446EB18B922C}</Project>
-      <Name>HaoCodeBuilder.Data.Oracle</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HaoCodeBuilder.Data.Sqlite\HaoCodeBuilder.Data.Sqlite.csproj">
-      <Project>{97858E96-E14D-4FB8-B5A1-646B2F581206}</Project>
-      <Name>HaoCodeBuilder.Data.Sqlite</Name>
-    </ProjectReference>
     <ProjectReference Include="..\HaoCodeBuilder.Data.SqlServer\HaoCodeBuilder.Data.SqlServer.csproj">
       <Project>{9F6A8754-7BA9-4D30-9EE7-DA2327730081}</Project>
       <Name>HaoCodeBuilder.Data.SqlServer</Name>

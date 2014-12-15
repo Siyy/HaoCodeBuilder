@@ -35,7 +35,7 @@ namespace HaoCodeBuilder.Business
             factory.Append("namespace " + param.NameSpace + (param.NameSpace.IsNullOrEmpty()?"": ".") + param.CNSC.Factory + (param.NameSpace1.IsNullOrEmpty() ? "" : "." + param.NameSpace1) + "\r\n");
             factory.Append("{\r\n");
 
-            factory.Append("\tpublic class " + param.ClassName + "\r\n");
+			factory.Append("\tpublic partial class " + param.ClassName + "\r\n");
             factory.Append("\t{\r\n");
             factory.Append("\t\t/// <summary>\r\n");
             factory.Append("\t\t/// 创建实例对象\r\n");
